@@ -72,6 +72,11 @@ git add --all
 ```
 git restore --staged MyModifiedFile
 ```
+* remove untracked files/folders:
+```
+git clean -nd         (list what would be considered for cleaning)
+git clean -fd         (remove untracked files & folders)
+```
 
 Commit (locally)
 ===
