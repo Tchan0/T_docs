@@ -100,11 +100,15 @@ git push origin MyLocalBranchname
 
 Diffs & Patches
 ===
-* list files changed in a commit
+* List commits after a certain date
+```
+git log --after="2023-20-04T10:36:00-07:00" --pretty=format:"%H - %ci"
+```
+* List files changed in a commit
 ```
 git diff --name-only COMMITHASH~1 COMMITHASH
 ```
-* create patch based on a diff
+* Create patch based on a diff
 ```
 git diff --patch COMMITHASH~1 COMMITHASH > patches/mypatch.patch
 ```
@@ -115,3 +119,4 @@ git apply --reject --whitespace=fix mypatch.patch
 
 ## References
 * [Azure Devops - Run Git commands in a script](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/git-commands?view=azure-devops&tabs=yaml)
+* [Git pretty formats](https://git-scm.com/docs/pretty-formats)
