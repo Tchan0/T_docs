@@ -100,9 +100,10 @@ git push origin MyLocalBranchname
 
 Diffs & Patches
 ===
-* List commits after a certain date
+* List commits
 ```
-git log --after="2023-20-04T10:36:00-07:00" --pretty=format:"%H - %ci"
+git log --after="2023-20-04T10:36:00-07:00" --pretty=format:"%H - %an - %ci"          (List commits after a certain date)
+git log -n 15  --pretty=format:"%H - %an - %ci"                                       (List last 15 commits)
 ```
 * List files changed in a commit
 ```
