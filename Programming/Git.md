@@ -103,7 +103,9 @@ Diffs & Patches
 * List commits
 ```
 git log --after="2023-20-04T10:36:00-07:00" --pretty=format:"%H - %an - %ci"          (List commits after a certain date)
+git log origin/master --after="2023-20-04T10:36:00-07:00" --pretty=format:"%H - %an - %ci"          (same as above, but for the remote branch)
 git log -n 15  --pretty=format:"%H - %an - %ci"                                       (List last 15 commits)
+
 ```
 * List files changed in a commit
 ```
