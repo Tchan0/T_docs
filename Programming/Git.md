@@ -82,7 +82,7 @@ Commit (locally)
 ===
 * commit without sign-off
 ```
-git commit --no-signoff -v -m "my_commit_comment" --author="T_chan <>"
+git -c commiter.name="T_chan" -c committer.email="" commit --no-signoff -v -m "my_commit_comment" --author="T_chan <>"
 git commit --no-signoff -v -m "my_commit_comment" --author="T_chan <me@hotmail.com>"
 ```
 * commit with sign-off
