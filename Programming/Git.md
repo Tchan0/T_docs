@@ -119,6 +119,12 @@ git diff --patch COMMITHASH~1 COMMITHASH > patches/mypatch.patch
 ```
 git apply --reject --whitespace=fix mypatch.patch
 ```
+* Detach HEAD back in time to a previous commit has
+```
+git checkout <commithash>
+git checkout master                              (to go back to the latest state)
+```
+
 
 ## References
 * [Azure Devops - Run Git commands in a script](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/git-commands?view=azure-devops&tabs=yaml)
