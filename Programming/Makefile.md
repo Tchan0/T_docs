@@ -65,7 +65,7 @@ $(TARGET): $(OBJS)
 	gcc -o $(TARGET) $(OBJS) $(LIBS)
 
 %.o: %.c
-	cc $(CFLAGS) -I$(C_INCLUDE_PATH) -c $< -o $@
+	cc $(CFLAGS) -I$(C_INCLUDE_PATH) -c $< -r -o $@
 
 .PHONY : asm
 asm: $(TARGET)
