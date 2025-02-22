@@ -98,6 +98,21 @@ Commit (to remote, after local commit)
 git push origin MyLocalBranchname
 ```
 
+Rebase process
+===
+```
+git fetch
+switch to branch
+git rebase origin/master
+
+(modify the files as requested)
+
+git add  modifiedfiles
+git rebase --continue
+
+git push -f origin full_naomi_compat
+```
+
 Diffs & Patches
 ===
 * List commits
