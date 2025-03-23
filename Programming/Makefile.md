@@ -42,7 +42,7 @@ clean: rm-elf
 TARGET = main
 
 # .c files to be compiled, converted to ".o"
-OBJS = main.o
+OBJS = $(basename $(TARGET)).o
 
 # LIBS to be included when linking
 # LIBS = -lgl
