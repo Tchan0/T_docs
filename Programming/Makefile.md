@@ -80,3 +80,4 @@ dist: $(TARGET) rm-objs
 * [Make](https://en.wikipedia.org/wiki/Make_(software))
 * [GNU Make](https://www.gnu.org/software/make/manual/html_node/)
 * [A Short Introduction to Makefile](https://www3.nd.edu/~zxu2/acms60212-40212/Makefile.pdf)
+* [Unix Makefile](https://lmb.informatik.uni-freiburg.de/people/ma/mly_Unix_Makefile.html)
